@@ -30,7 +30,7 @@ defmodule ElMonads.Mixfile do
     # These are the default files included in the package
     [
       name: :el_monads,
-      files: ["lib", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+      files: ["lib", "mix.exs", "README*", "LICENSE*", "config"],
       maintainers: ["Maxim Davydov"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/Twizty/el_monads"}
