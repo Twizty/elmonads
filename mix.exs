@@ -4,9 +4,13 @@ defmodule ElMonads.Mixfile do
   def project do
     [app: :monads,
      version: "0.1.0",
-     elixir: "~> 1.4",
+     elixir: "~> 1.0",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     description: description(),
+     package: package(),
+     name: "El Monads",
+     source_url: "https://github.com/Twizty/el_monads",
      deps: deps()]
   end
 
@@ -16,6 +20,21 @@ defmodule ElMonads.Mixfile do
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
     [extra_applications: [:logger]]
+  end
+
+  def description do
+    "This is an implementation of the `Try` and `Maybe` monads. Please see tests for examples."
+  end
+
+  defp package do
+    # These are the default files included in the package
+    [
+      name: :el_monads,
+      files: ["lib", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+      maintainers: ["Maxim Davydov"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/Twizty/el_monads"}
+    ]
   end
 
   # Dependencies can be Hex packages:
