@@ -1,6 +1,6 @@
 # Monads
 
-**TODO: Add description**
+This is an implementation of the `Try` and `Maybe` monads. Please see tests for examples.
 
 ## Installation
 
