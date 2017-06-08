@@ -1,4 +1,4 @@
-defmodule Monads.Mixfile do
+defmodule ElMonads.Mixfile do
   use Mix.Project
 
   def project do

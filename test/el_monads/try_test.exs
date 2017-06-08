@@ -1,7 +1,7 @@
-defmodule Monads.TryTest do
+defmodule ElMonads.TryTest do
   use ExUnit.Case
-  alias Monads.Try
-  doctest Monads
+  alias ElMonads.Try
+  doctest ElMonads
 
   test "tries with lambda successfully" do
     result = Try.m(fn -> 1 end) |> Try.m(fn e -> e + 1 end) |> Try.get

@@ -1,6 +1,6 @@
-defmodule MonadsTest do
+defmodule ElMonadsTest do
   use ExUnit.Case
-  doctest Monads
+  doctest ElMonads
 
   test "the truth" do
     assert 1 + 1 == 2

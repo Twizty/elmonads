@@ -1,7 +1,7 @@
-defmodule Monads.MaybeTest do
+defmodule ElMonads.MaybeTest do
   use ExUnit.Case
-  alias Monads.Maybe
-  doctest Monads
+  alias ElMonads.Maybe
+  doctest ElMonads
 
   test "maybe with lambda successfully" do
     result = Maybe.m(fn -> 1 end) |> Maybe.m(fn e -> e + 1 end) |> Maybe.get

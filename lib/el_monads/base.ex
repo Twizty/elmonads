@@ -1,4 +1,4 @@
-defmodule Monads.Base do
+defmodule ElMonads.Base do
   defmacro __using__(_params) do
     quote do
       @spec m(function) :: [any]

@@ -1,0 +1,2 @@
+defmodule ElMonads do
+end
