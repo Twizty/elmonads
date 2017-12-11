@@ -1,3 +1,6 @@
+# Disclaimer
+*This is a toy-project. I had fun doing this library but these are not real monads which you could use in _Haskell_. I just tried to adopt the idea of computations with side effect from _Haskell_ to _Elixir_ with minimal overhead to the syntax.*
+
 # Monads
 
 This is an implementation of the `Try` and `Maybe` monads. Please see tests for examples.
